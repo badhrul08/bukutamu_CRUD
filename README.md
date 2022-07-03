@@ -1,7 +1,7 @@
 # Aplikasi Pendataan Buku Tamu
 
 <li>Aplikasi Buku Tamu berbasis Web yang dibangun menggunakan framework CodeIgniter</li>
-<li>Aplikasi Buku Tamu ini mempunyai saru role saja yaitu admin yang bertugas melakukan kegiatan CRUD setiap tamu yang datang dan pergi</li>
+<li>Aplikasi Buku Tamu ini mempunyai satu role saja yaitu admin yang bertugas melakukan kegiatan CRUD setiap tamu yang datang dan pergi, admin tersebut dapat dimasukkan dengan username : admin, dan password : admin@@</li>
 <li>Aplikasi ini sudah memiliki fitur exception yang baik ketika data yang akan diinput ada kekurangan</li>
 
 

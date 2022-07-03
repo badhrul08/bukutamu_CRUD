@@ -2,14 +2,17 @@
 
 class Mtamu extends CI_Model {
 
+  //menampilkan seluruh data pada table tb_tamu
   public function view(){
     return $this->db->get('tb_tamu')->result();
   }
 
+  //menampilkan waktu
   public function jml_tamu(){
     return $this->db->query('SELECT date(waktu) AS wkt, COUNT(waktu) AS jumlah FROM `tb_tamu` GROUP BY date(waktu)')->result();
   }
   
+  //melakukan validasi data sebelum dilakukan insert dan update
   public function validation($mode){
     $this->load->library('form_validation');
     if($mode == "save"){

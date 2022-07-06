@@ -214,8 +214,8 @@
 							<input type="text" class="form-control" name="edit_alamat" id="edit_alamat" placeholder="Masukkan Alamat">
 						</div>
 						<div class="form-group">
-							<label class="control-label mb-10" for="edit_no">No_Hp</label>
-							<input type="text" class="form-control" name="edit_no" id="edit_no" placeholder="Masukkan Nomor Handphone">
+							<label class="control-label mb-10" for="edit_nomor">Nomor Handphone</label>
+							<input type="text" class="form-control" name="edit_nomor" id="edit_nomor" placeholder="Masukkan Nomor Handphone">
 						</div>
 						<input type="text" class="hidden" name="edit_waktu" id="edit_waktu">
 					</form>
@@ -395,12 +395,12 @@
 				var nama = button.data('nama');
 				var jk = button.data('jk');
 				var alamat = button.data('alamat');
-				var No_Hp = button.data('No_Hp');
+				var No_Hp = button.data('no_hp');
 				$('#edit_idtamu').val(id);
 				$('#edit_nama').val(nama);
 				$('#edit_jeniskelamin').val(jk);
 				$('#edit_alamat').val(alamat);
-				$('#edit_no').val(No_Hp);
+				$('#edit_nomor').val(No_Hp);
 			})
 
 			$('#form-hapus').on('show.bs.modal', function (event) {

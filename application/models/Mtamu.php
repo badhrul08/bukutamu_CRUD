@@ -19,12 +19,12 @@ class Mtamu extends CI_Model {
       $this->form_validation->set_rules('input_nama', 'Nama', 'required|max_length[50]');
       $this->form_validation->set_rules('input_jeniskelamin', 'Jenis Kelamin', 'required');
       $this->form_validation->set_rules('input_alamat', 'Alamat', 'required');
-      $this->form_validation->set_rules('input_no', 'No_Hp', 'required|max_length[13]');
+      $this->form_validation->set_rules('input_no', 'no_hp', 'required|max_length[13]');
     }else if($mode == "update"){
       $this->form_validation->set_rules('edit_nama', 'Nama', 'required|max_length[50]');
       $this->form_validation->set_rules('edit_jeniskelamin', 'Jenis Kelamin', 'required');
       $this->form_validation->set_rules('edit_alamat', 'Alamat', 'required');
-      $this->form_validation->set_rules('edit_no', 'No_Hp', 'required|max_length[13]');
+      $this->form_validation->set_rules('edit_nomor', 'no_hp', 'required|max_length[13]');
     }
     if($this->form_validation->run()){return true;}
     else{return false;}
@@ -48,7 +48,7 @@ class Mtamu extends CI_Model {
       "nama" => $this->input->post('edit_nama'),
       "jenis_kelamin" => $this->input->post('edit_jeniskelamin'),
       "alamat" => $this->input->post('edit_alamat'),
-      "No_Hp" => $this->input->post('edit_no'),
+      "No_Hp" => $this->input->post('edit_nomor'),
       "waktu" => $this->input->post('edit_waktu')
     );
     $this->db->where('id_tamu', $id);
